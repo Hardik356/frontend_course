@@ -10,6 +10,7 @@ This course includes following technologies:
 - React JS
 - Projects
     - Resume as a Project (Individual Project)
+    - Calculator
 
 
 This is intended for Chitkara University Students Batch 2021 5th Semester students studying Front End (under umbrella of Coding Ninjas) as their course subject.
