@@ -1,21 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Introduction to viewport</title>
 	<link rel="stylesheet" type="text/css" href="viewport_1_style.css">
-
 	<meta  name="viewport" content="Width=device-width, initial-scale=1"/>
-
 </head>
 <body>
 	<div id="div1">
-		<p>
-			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-			
-		</p>
+		<h1 style="text-align: center;"> Understanding ViewPort </h1>
+
+		<button class="accordion">How Browser tells, "how the page will look like" in other device size? or How narrow screen devices renders webpage?</button>
+		<div class="panel">
+		  <p>
+		  	<li> Browser first renders on virtual view port,</li>
+		  	<li> which is wider than target device and</li>
+		  	<li> then shrinks this page to a point that it fits desired size.</li>
+		   </p>
+		</div>
+
+		<button class="accordion">Why broswer does this?</button>
+		<div class="panel">
+		  <p>
+		  	<li> Many pages are not mobile optimized and breaks when rendered at small width.</li>
+		  	<li> Browser attempt to make non mobile optimized website look better on mobile devices.</li>
+		   </p>
+		</div>
+
+		<button class="accordion">Is this attempt always successful?</button>
+		<div class="panel">
+		  <p>
+		  	No.
+		   </p>
+		</div>
+
+		<button class="accordion">So, How to solve it?</button>
+		<div class="panel">
+		  <p>
+		  	use viewport meta tag and media queries.
+		   </p>
+		</div>
+
+		<button class="accordion">What is viewport meta tag?</button>
+		<div class="panel">
+		  <p>
+		  	meta tag with name viewport
+			<blockquote> &ltmeta  name="viewport" content="Width=device-width, initial-scale=1"&gt </blockquote>
+		   </p>
+		</div>
+
+		<button class="accordion">What is significance of Width=device-width?</button>
+		<div class="panel">
+		  <p>
+		  	width of virtual viewport = same as desired device width
+		   </p>
+		</div>
+
+		<button class="accordion">What is initial scale used for?</button>
+		<div class="panel">
+		  <p>
+		  	It is zoom factor for the content.
+		   </p>
+		</div>
+
+		<button class="accordion">Any way to check if I forget viewport?</button>
+		<div class="panel">
+		  <p>
+		  	A good tool : <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en" target="_blank">lighthouse</a> audits the web page, and can flag if viewport is missing.
+
+		  	It is super helpful with different checks it does on webpage, go ahead and install it.
+		   </p>
+		</div>
+
 	</div>
 
 </body>
+
+<script type="text/javascript" src="accordion.js"></script>
+
 </html>
 
 <!-- 
