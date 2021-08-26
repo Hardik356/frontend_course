@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to Media Query</title>
+	<link rel="stylesheet" type="text/css" href="media_queries_1_style.css">
+	<link rel="stylesheet" type="text/css" href="accordion.css">
+
+	<meta  name="viewport" content="Width=device-width, initial-scale=1"/>
+</head>
+<body>
+	<div id="div1">
+		<h1 style="text-align: center;"> Understanding Media Query </h1>
+
+		<button class="accordion">Why are they introduced?</button>
+		<div class="panel">
+		  <p>
+		  	<li> Allow us to control,</li>
+		  	<li> the set of css rules to be applied</li>
+		  	<li> over different set of conditions.</li>
+		   </p>
+		</div>
+
+		<button class="accordion">How many components a media query have?</button>
+		<div class="panel">
+		  <p>
+		  	Two.
+		  	<ul>
+			  	<li> Media type : It's a type of device on which our code will run.</li>
+			  		<ul>
+			  			<li>Screen</li>
+			  			<li>Print</li>
+			  			<li>Speech</li>
+			  			<li>All</li>
+			  		</ul>
+
+			  	<li> Media Property</li>
+			  		<ul>
+			  			<li>Width</li>
+			  			<li>Height</li>
+			  			<li>Orientation</li>
+			  			<li>Screen resolution</li>
+			  		</ul>
+		 	 </ul>
+		   </p>
+		</div>
+
+		<button class="accordion">How to write a media query?</button>
+		<div class="panel">
+		  <p>
+		  	@media &lt media-type &gt and (media-property-condition){
+		  	&lt css you want &gt
+		  	}
+
+		  	<blockquote>Eg. @media &lttype of media&gt and &ltcondition&gt{
+								#div1{
+
+								}
+								#div2{
+
+								}
+							}
+			</blockquote>
+		   </p>
+		</div>
+
+		<button class="accordion">A bootstrap standard to identify different devices</button>
+		<div class="panel">
+		  <p>
+		  	<ul>
+		  		<li>// Small devices (landscape phones, 576px and up)
+					@media (min-width: 576px) { ... }</li>
+				<li>// Medium devices (tablets, 768px and up)
+				@media (min-width: 768px) { ... }</li>
+
+				<li>// Large devices (desktops, 992px and up)
+				@media (min-width: 992px) { ... }</li>
+
+				<li>// X-Large devices (large desktops, 1200px and up)
+				@media (min-width: 1200px) { ... }</li>
+				<li>
+				// XX-Large devices (larger desktops, 1400px and up)
+				@media (min-width: 1400px) { ... }</li>
+		  	</ul>
+		   </p>
+		</div>
+
+
+
+
+	</div>
+
+</body>
+
+<script type="text/javascript" src="accordion.js"></script>
+
+</html>

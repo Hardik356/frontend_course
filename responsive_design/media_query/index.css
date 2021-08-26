@@ -1,0 +1,58 @@
+html {
+  text-align: center;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .header {
+    color: orange;
+  }
+}
+
+/* Using Orientation */
+/* @media (orientation: portrait) {
+  .content {
+    font-size: 30px;
+     color: red;
+  }
+} 
+
+ @media (orientation: landscape) {
+  .content {
+    color: grey;
+
+  }
+} */
+
+/* using Aspect Ratio */
+/* @media (aspect-ratio: 1/1) {
+  .content {
+    color: blue;
+    padding: 30px;
+  }
+} */
+
+/* Using resolution */
+/* @media (min-resolution: 200dpi) {
+  .content {
+    color: white;
+    background-color: black;
+    padding: 30px;
+    margin: 30px;
+  }
+} */
+
+/* Using hover */
+/* @media (hover: hover) {
+  .content:hover {
+    font-style: italic;
+    background-color: orange;
+  }
+} */
+
+/* Using not operator */
+/*@media not all and (min-width: 503px) {
+  .content {
+    color: red;
+    padding: 30px;
+  }
+}*/
